@@ -789,15 +789,9 @@ class ProfileScreen(Screens):
         # PELT TYPE
         output += i18n.t(
             "screens.profile.pelt_label",
-            pelt=i18n.t(f"cat.pelts.{the_cat.pelt.name}").lower(),
-        )
-        # NEWLINE ----------
-        output += "\n"
-
-        # PELT LENGTH
-        output += i18n.t(
-            "screens.profile.fur_label",
             length=i18n.t(f"cat.pelts.fur_{the_cat.pelt.length}"),
+            color=str(the_cat.pelt.colour).lower(),
+            pelt=i18n.t(f"cat.pelts.{the_cat.pelt.name}").lower(),
         )
         # NEWLINE ----------
 

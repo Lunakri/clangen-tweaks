@@ -33,9 +33,8 @@
             "one": "%{age} (1 moon)",
             "many": "%{age} (%{count} moons)"
         },
-        "eyes_label": "eyes: %{eyes}",
-        "pelt_label": "pelt: %{pelt}",
-        "fur_label": "fur length: %{length}",
+        "eyes_label": "%{eyes} eyes",
+        "pelt_label": "%{length} %{color} %{pelt} fur",
         "accessory_label": "accessory: %{accessory}",
         "parent_label": {
             "one": "parent: %{parents}",
@@ -45,7 +44,7 @@
             "one": "(1 life)",
             "many": "(%{count} lives)"
         },
-        "experience_label": "experience: %{exp}",
+        "experience_label": "%{exp}",
         "subtab_favorite_tooltip": "favorite this sub-tab — it will be the default sub tab displayed when History is viewed",
         "subtab_unfavorite_tooltip": "un-favorite this sub-tab",
         "show_moons_tooltip": "Show the Moon that certain history events occurred on",
