@@ -34,7 +34,8 @@
             "many": "%{age} (%{count} moons)"
         },
         "eyes_label": "%{eyes} eyes",
-        "pelt_label": "%{length} %{color} %{pelt} fur",
+        "pelt_color_label": "%{color} %{pelt}",
+        "pelt_length_label" : "%{length} fur",
         "accessory_label": "accessory: %{accessory}",
         "parent_label": {
             "one": "parent: %{parents}",

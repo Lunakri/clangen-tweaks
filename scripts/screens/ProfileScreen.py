@@ -787,11 +787,25 @@ class ProfileScreen(Screens):
         output += "\n"
 
         # PELT TYPE
+        if(the_cat.pelt.name in Pelt.torties):
+            output += i18n.t(
+                "screens.profile.pelt_color_label",
+                color=i18n.t(f"{the_cat.pelt.colour} and {the_cat.pelt.tortie_colour}").lower(),
+                pelt=i18n.t(f"cat.pelts.{the_cat.pelt.name}").lower(),
+            )
+        else:
+            output += i18n.t(
+                "screens.profile.pelt_color_label",
+                color=i18n.t(the_cat.pelt.colour).lower(),
+                pelt=i18n.t(f"cat.pelts.{the_cat.pelt.name}").lower(),
+            )
+        # NEWLINE ----------
+        output += "\n"
+
+        # PELT LENGTH
         output += i18n.t(
-            "screens.profile.pelt_label",
+            "screens.profile.pelt_length_label",
             length=i18n.t(f"cat.pelts.fur_{the_cat.pelt.length}"),
-            color=str(the_cat.pelt.colour).lower(),
-            pelt=i18n.t(f"cat.pelts.{the_cat.pelt.name}").lower(),
         )
         # NEWLINE ----------
 
