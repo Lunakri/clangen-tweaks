@@ -39,42 +39,6 @@
     },
     "exceptions": [
         {
-            "poses": ["newborn0", "newborn1", "newborn2"],
-            "layers":
-            {
-                "6":
-                {
-                    "group_name": "BASICPATTERNGRAD",
-                    "color": "newborn_pattern_gradient_top"
-                },
-                "5":
-                {
-                    "group_name": "SINGLESTRIPEPATTERN",
-                    "color": "newborn_pattern"
-                },
-                "4":
-                {
-                    "group_name": "SINGLESTRIPEPATTERNFADE",
-                    "color": "newborn_pattern"
-                },
-                "3":
-                {
-                    "group_name": "SIMPLETOPGRAD",
-                    "color": "newborn_base_gradient_top"
-                },
-                "2":
-                {
-                    "group_name": "SIMPLEBOTTOMGRAD",
-                    "color": "newborn_base_gradient_bottom"
-                },
-                "1":
-                {
-                    "group_name": "BASEMASK",
-                    "color": "newborn_base"
-                }
-            }
-        },
-        {
             "colors": "BLOSSOM",
             "layer_order": ["1", "2", "3", "4", "5", "6", ["7", "8",["9", "10", "+blend_mode:mask"]]],
             "layers": {
@@ -108,7 +72,7 @@
                 "4":
                 {
                     "group_name": "SIMPLETOPGRAD",
-                    "color": "singlecolour_blossom_base_gradient_top",
+                    "color": "singlecolour_base_gradient_top",
                     "opacity": 100
                 },
                 "3": {

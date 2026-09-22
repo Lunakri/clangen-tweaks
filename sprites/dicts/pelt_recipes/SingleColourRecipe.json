@@ -19,61 +19,22 @@
     "exceptions": [
         {
             "colors": "BLACK",
-            "poses": ["newborn0", "newborn1", "newborn2"],
-            "layer_order": ["1", "2"],
             "layers":
             {
                 "1":
                 {
                     "group_name": "BASEMASK",
-                    "color": "newborn_base_singlecolour_black"
+                    "color": "singlecolour_base"
                 },
                 "2":
                 {
                     "group_name": "SIMPLEBOTTOMGRAD",
-                    "color": "newborn_base_gradient_bottom_singlecolour_black"
-                }
-            }
-        },
-        {
-            "colors": "BLACK",
-            "layers":
-            {
-                "1":
-                {
-                    "group_name": "BASEMASK",
-                    "color": "base_singlecolour_black"
-                },
-                "2":
-                {
-                    "group_name": "SIMPLEBOTTOMGRAD",
-                    "color": "base_gradient_bottom_singlecolour_black"
+                    "color": "singlecolour_base_gradient_bottom"
                 },
                 "3":
                 {
                     "group_name": "SIMPLETOPGRAD",
-                    "color": "base_gradient_top_singlecolour_black"
-                }
-            }
-        },
-        {
-            "poses": ["newborn0", "newborn1", "newborn2"],
-            "layers":
-            {
-                "3":
-                {
-                    "group_name": "SIMPLETOPGRAD",
-                    "color": "newborn_base_gradient_top"
-                },
-                "2":
-                {
-                    "group_name": "SIMPLEBOTTOMGRAD",
-                    "color": "newborn_base_gradient_bottom"
-                },
-                "1":
-                {
-                    "group_name": "BASEMASK",
-                    "color": "newborn_base"
+                    "color": "singlecolour_base_gradient_top"
                 }
             }
         },
@@ -84,7 +45,7 @@
             {
                 "4": {
                     "group_name": "SIMPLETOPGRAD",
-                    "color": "singlecolour_blossom_base_gradient_top"
+                    "color": "singlecolour_base_gradient_top"
                 },
                 "3": {
                     "group_name": "LEGBOTTOMGRAD",
@@ -99,7 +60,7 @@
             {
                 "4": {
                     "group_name": "SIMPLETOPGRAD",
-                    "color": "singlecolour_honey_base_gradient_top"
+                    "color": "singlecolour_base_gradient_top"
                 }
             }
         }

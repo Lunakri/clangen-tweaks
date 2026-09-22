@@ -18,97 +18,22 @@
         },
         "4":{
             "group_name": "FRECKLEDPATTERNBODY",
-            "color": "exotic_pattern"
+            "color": "pattern"
         },
         "3": {
             "group_name": "EXOTICTOPGRAD",
-            "color": "exotic_base_gradient_top"
+            "color": "base_gradient_top"
         },
         "2": {
             "group_name": "EXOTICBOTTOMGRAD",
-            "color": "exotic_base_gradient_bottom"
+            "color": "base_gradient_bottom"
         },
         "1":{
             "group_name": "BASEMASK",
-            "color": "exotic_base"
+            "color": "base"
         }
     },
     "exceptions": [
-        {
-            "colors": ["BLACK", "CHOCOLATE", "DARKBROWN"],
-            "poses": ["newborn0", "newborn1", "newborn2"],
-            "layers":
-            {
-                "6":
-                {
-                    "group_name": "FRECKLEDPATTERNGRAD",
-                    "color": "newborn_exotic_base_gradient_top",
-                    "opacity": 65
-                },
-                "5":
-                {
-                    "group_name": "FRECKLEDPATTERNBACK",
-                    "color": "newborn_exotic_pattern_gradient_top"
-                },
-                "4":
-                {
-                    "group_name": "FRECKLEDPATTERNBODY",
-                    "color": "newborn_exotic_pattern_gradient_top"
-                },
-                "3":
-                {
-                    "group_name": "EXOTICTOPGRAD",
-                    "color": "newborn_exotic_base_gradient_top"
-                },
-                "2":
-                {
-                    "group_name": "EXOTICBOTTOMGRAD",
-                    "color": "newborn_exotic_base_gradient_bottom"
-                },
-                "1":
-                {
-                    "group_name": "BASEMASK",
-                    "color": "newborn_exotic_base"
-                }
-            }
-        },
-        {
-            "poses": ["newborn0", "newborn1", "newborn2"],
-            "layers":
-            {
-                "6":
-                {
-                    "group_name": "FRECKLEDPATTERNGRAD",
-                    "color": "newborn_exotic_base_gradient_top",
-                    "opacity": 65
-                },
-                "5":
-                {
-                    "group_name": "FRECKLEDPATTERNBACK",
-                    "color": "newborn_exotic_pattern_gradient_top"
-                },
-                "4":
-                {
-                    "group_name": "FRECKLEDPATTERNBODY",
-                    "color": "newborn_exotic_pattern"
-                },
-                "3":
-                {
-                    "group_name": "EXOTICTOPGRAD",
-                    "color": "newborn_exotic_base_gradient_top"
-                },
-                "2":
-                {
-                    "group_name": "EXOTICBOTTOMGRAD",
-                    "color": "newborn_exotic_base_gradient_bottom"
-                },
-                "1":
-                {
-                    "group_name": "BASEMASK",
-                    "color": "newborn_exotic_base"
-                }
-            }
-        },
         {
             "colors": "DAWN",
             "layer_order": ["1", "2", "3", "4", "5", ["6", "7"], ["8", ["9", "10", "+blend_mode:mask"]]],
@@ -129,7 +54,7 @@
             },
             "6": {
                 "group_name": "BASICPATTERNGRAD",
-                "color": "exotic_pattern_gradient_top"
+                "color": "pattern_gradient_top"
             },
             "5": {
                 "group_name": "FRECKLEDPATTERNBACK",
@@ -137,19 +62,19 @@
             },
             "4":{
                 "group_name": "FRECKLEDPATTERNBODY",
-                "color": "exotic_pattern"
+                "color": "pattern"
             },
             "3": {
                 "group_name": "EXOTICTOPGRAD",
-                "color": "exotic_base_gradient_top"
+                "color": "base_gradient_top"
             },
             "2": {
                 "group_name": "EXOTICBOTTOMGRAD",
-                "color": "exotic_base_gradient_bottom"
+                "color": "base_gradient_bottom"
             },
             "1":{
                 "group_name": "BASEMASK",
-                "color": "exotic_base"
+                "color": "base"
                 }
             }
         },   
@@ -169,7 +94,7 @@
                 },
                 "5.5": {
                     "group_name": "LEGBOTTOMGRAD",
-                    "color": "exotic_pattern_gradient_bottom"
+                    "color": "pattern_gradient_bottom"
                 },
                 "5": {
                     "group_name": "FRECKLEDPATTERNBACK",
@@ -177,23 +102,23 @@
                 },
                 "4": {
                     "group_name": "FRECKLEDPATTERNBODY",
-                    "color": "exotic_pattern"
+                    "color": "pattern"
                 },
                 "3": {
                     "group_name": "EXOTICTOPGRAD",
-                    "color": "singlecolour_blossom_base_gradient_top"
+                    "color": "singlecolour_base_gradient_top"
                 },
                 "2": {
                     "group_name": "EXOTICBOTTOMGRAD",
-                    "color": "exotic_base_gradient_bottom"
+                    "color": "base_gradient_bottom"
                 },
                 "1.5": {
                         "group_name": "LEGBOTTOMGRAD",
-                        "color": "exotic_base_gradient_legs_tail"
+                        "color": "base_gradient_legs_tail"
                     },
                 "1": {
                         "group_name": "BASEMASK",
-                        "color": "exotic_base"
+                        "color": "base"
                     }
                 }
             }
