@@ -759,6 +759,17 @@ class ProfileScreen(Screens):
         # NEWLINE ----------
         output += "\n"
 
+        # SPECIES
+        if the_cat.revealed:
+            if the_cat.species == "cat":
+                output += the_cat.species
+            else:
+                output += f"<font color='#FF0000'>{the_cat.species}</font>"
+        else:
+            output += "cat"
+        # NEWLINE ----------
+        output += "\n"
+
         # AGE
         if the_cat.age == CatAge.KITTEN:
             age = i18n.t("general.kitten_profile")

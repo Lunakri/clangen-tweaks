@@ -13,6 +13,7 @@ from typing import Dict, List, Any, Union, Callable, Optional, TYPE_CHECKING, Li
 
 import i18n
 import ujson  # type: ignore
+import random
 
 import scripts.game_structure.localization as pronouns
 from scripts.cat import pronouns
@@ -128,6 +129,7 @@ class Cat:
     def __init__(
         self,
         ID: str,
+        species: str,
         gender_dict: GenderDict,
         pelt: Pelt,
         moons: int,
@@ -141,6 +143,7 @@ class Cat:
         toggles: CatTogglesDict,
         experience: int,
         birth_cooldown: int,
+        revealed=False,
         specsuffix_hidden=False,  # to delete once Name is decoupled from Cat
         *,
         example=False,
@@ -151,6 +154,7 @@ class Cat:
         Initialize the cat.
 
         :param ID: Cat's ID value
+        :param species: Cat's species
         :param gender_dict: Cat's sex & gender (and pronouns if loading from save)
         :param pelt: Pelt object
         :param moons: Cat's age in moons
@@ -187,6 +191,10 @@ class Cat:
 
         # Public attributes
         self.ID = ID
+
+        # species
+        self.species: str = species
+        self.revealed = revealed
 
         self.gender: Literal["male", "female"] = gender_dict["sex"]
         self.genderalign = gender_dict["genderalign"]
@@ -405,6 +413,21 @@ class Cat:
                 f"Mentor ID {mentor_id} of type {type(mentor_id)} isn't valid :("
                 "\nCat.mentor has to be either None (no mentor) or the mentor's ID as a string."
             )
+
+    @property
+    def species(self):
+        """Sets species"""
+        return self._species
+
+    @species.setter
+    def species(self, value):
+        if value:
+            self._species = value
+        else:
+            all_species = constants.SPECIES["species"]
+            weights = constants.SPECIES["starter_weights"]
+
+            self._species = random.choices(all_species, weights)[0]
 
     @property
     def pronouns(self) -> List[Dict[str, Union[str, int]]]:
@@ -2147,6 +2170,7 @@ class Cat:
 
         cat_ob = Cat(
             ID=cat_info["ID"],
+            species=None,
             gender_dict=GenderDict(sex=None, genderalign=None),
             pelt=None,
             moons=cat_info["moons"],
@@ -2167,6 +2191,7 @@ class Cat:
             toggles={},
             experience=0,
             birth_cooldown=0,
+            revealed=False,
             specsuffix_hidden=False,
             faded=True,
         )
@@ -2421,6 +2446,7 @@ class Cat:
         if faded:
             return {
                 "ID": self.ID,
+                "species": self.species,
                 "name_prefix": self.name.prefix,
                 "name_suffix": self.name.suffix,
                 "status": self.status.get_status_dict(),
@@ -2434,6 +2460,8 @@ class Cat:
         else:
             return {
                 "ID": self.ID,
+                "species": self.species,
+                "revealed": self.revealed,
                 "name_prefix": self.name.prefix,
                 "name_suffix": self.name.suffix,
                 "specsuffix_hidden": self.name.specsuffix_hidden,

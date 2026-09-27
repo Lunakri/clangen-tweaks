@@ -196,6 +196,8 @@ with open(
     CRUEL_CARDS_ENVIRONMENT: dict = ujson.loads(read_file.read())
 CRUEL_CARDS_ALL.update(CRUEL_CARDS_ENVIRONMENT)
 
+with open("resources/species.json", "r", encoding="utf-8") as read_file:
+    SPECIES = ujson.loads(read_file.read())
 
 with open(
     "resources/dicts/cruel_season/card_conflicts.json", "r", encoding="utf-8"

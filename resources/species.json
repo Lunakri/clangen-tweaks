@@ -1,0 +1,22 @@
+{
+    "species": [
+        "cat",
+        "reaperspawn",
+        "werewolf",
+        "witch"
+    ],
+    "inheritable": [
+        "cat",
+        "reaperspawn"
+    ],
+    "ceremony": [
+        "witch"
+    ],
+    "random": [
+        "cat",
+        "reaperspawn",
+        "witch"
+    ],
+
+    "starter_weights": [75,5,10,10]
+}

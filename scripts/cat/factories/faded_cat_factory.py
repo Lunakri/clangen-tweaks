@@ -29,6 +29,7 @@ class FadedCatFactory(BaseCatFactory):
 
         cat = Cat(
             ID=kwargs["ID"],
+            species=kwargs["species"],
             gender_dict=GenderDict(sex=None, genderalign=None),
             pelt=None,
             moons=kwargs["moons"],
@@ -49,6 +50,7 @@ class FadedCatFactory(BaseCatFactory):
             toggles={},
             experience=0,
             birth_cooldown=0,
+            revealed=False,
             specsuffix_hidden=False,
             faded=True,
         )

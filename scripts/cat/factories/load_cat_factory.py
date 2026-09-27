@@ -41,6 +41,8 @@ class LoadCatFactory(BaseCatFactory):
             raise KeyError("Cat ID missing!")
         cls.cat_id = kwargs["ID"]
 
+        species = kwargs["species"]
+
         pelt = cls._build_pelt(kwargs=kwargs)
 
         gender = GenderDict(
@@ -103,6 +105,7 @@ class LoadCatFactory(BaseCatFactory):
 
         cat_params = {
             "ID": cls.cat_id,
+            "species": species,
             "gender_dict": gender,
             "pelt": pelt,
             "moons": kwargs["moons"],
@@ -120,6 +123,7 @@ class LoadCatFactory(BaseCatFactory):
             "toggles": toggles,
             "experience": kwargs.get("experience"),
             "birth_cooldown": kwargs.get("birth_cooldown", 0),
+            "revealed": kwargs.get("revealed", False),
             "specsuffix_hidden": kwargs.get("specsuffix_hidden", False),
         }
 

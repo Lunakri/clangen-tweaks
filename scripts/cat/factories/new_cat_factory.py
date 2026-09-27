@@ -36,6 +36,8 @@ class NewCatFactory(BaseCatFactory, ABC):
         # remove all values that are empty
         overrides = {k: v for k, v in overrides.items() if v is not None}
 
+        species = overrides.get("species")
+
         status_dict = overrides.get("status_dict", {})
         if "rank" in overrides:
             status_dict["rank"] = overrides.get("rank")
@@ -74,6 +76,7 @@ class NewCatFactory(BaseCatFactory, ABC):
 
         cat_params = {
             "ID": cls.get_free_id(),
+            "species": species,
             "gender_dict": gender_dict,
             "pelt": pelt,
             "moons": moons,
@@ -111,6 +114,7 @@ class NewCatFactory(BaseCatFactory, ABC):
                 "experience", cls._get_random_experience(age, moons)
             ),
             "birth_cooldown": overrides.get("birth_cooldown", 0),
+            "revealed": overrides.get("revealed", False),
             "faded": False,
             "specsuffix_hidden": False,
         }
