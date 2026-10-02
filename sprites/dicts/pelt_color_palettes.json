@@ -403,19 +403,19 @@
         "exotic_muzzle": "#A1575B"
 },
     "RUST": {
-        "base": "#3A1C1D",
-        "base_gradient_bottom": "#33131E",
-        "base_gradient_top": "#703121",
+        "base": "#3b272c",
+        "base_gradient_bottom": "#513941",
+        "base_gradient_top": "#774232",
 
-        "pattern": "#120A08",
-        "pattern_gradient_top": "#331605",
-        "pattern_fill": "#32121D",
-        "pattern_fill_gradient_top": "#391B1C",
+        "pattern": "#291515",
+        "pattern_gradient_top": "#4D1B07",
+        "pattern_fill": "#4d3037",
+        "pattern_fill_gradient_top": "#553233",
 
-        "smoke_pattern": "#391B1C",
-        "smoke_pattern_gradient_top": "#331605",
-        "freckled_pattern_gradient_top": "#49201C",
-        "masked_light_pattern": "#3A1C1D",
+        "smoke_pattern": "#291515",
+        "smoke_pattern_gradient_top": "#4D1B07",
+        "freckled_pattern_gradient_top": "#5E291C",
+        "masked_light_pattern": "#774232",
         "exotic_light_pattern": "#391B1C",
         "exotic_muzzle": "#391B1C"
     }
