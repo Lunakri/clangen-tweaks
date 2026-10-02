@@ -2445,9 +2445,9 @@ class Cat:
         if faded:
             return {
                 "ID": self.ID,
-                "species": self.species,
                 "name_prefix": self.name.prefix,
                 "name_suffix": self.name.suffix,
+                "species": self.species,
                 "status": self.status.get_status_dict(),
                 "moons": self.moons,
                 "dead_for": self.dead_for,
@@ -2459,11 +2459,11 @@ class Cat:
         else:
             return {
                 "ID": self.ID,
-                "species": self.species,
-                "revealed": self.revealed,
                 "name_prefix": self.name.prefix,
                 "name_suffix": self.name.suffix,
                 "specsuffix_hidden": self.name.specsuffix_hidden,
+                "species": self.species,
+                "revealed": self.revealed,
                 "gender": self.gender,
                 "gender_align": self.genderalign,
                 "pronouns": (
