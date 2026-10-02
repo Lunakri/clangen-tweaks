@@ -13,7 +13,6 @@ from typing import Dict, List, Any, Union, Callable, Optional, TYPE_CHECKING, Li
 
 import i18n
 import ujson  # type: ignore
-import random
 
 import scripts.game_structure.localization as pronouns
 from scripts.cat import pronouns
@@ -427,7 +426,7 @@ class Cat:
             all_species = constants.SPECIES["species"]
             weights = constants.SPECIES["starter_weights"]
 
-            self._species = random.choices(all_species, weights)[0]
+            self._species = sample(all_species, counts=weights, k=1)[0]
 
     @property
     def pronouns(self) -> List[Dict[str, Union[str, int]]]:
