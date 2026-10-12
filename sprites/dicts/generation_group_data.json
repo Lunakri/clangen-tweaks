@@ -1,6 +1,7 @@
 {
     "pelts": {
         "colors": {
+            "CHERRY": "white",
             "WHITE": "white",
             "PALEGREY": "white",
             "SILVER": "white",
